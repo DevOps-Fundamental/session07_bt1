@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 680" width="100%" height="100%">
+  <defs>
+    <linearGradient id="winTitle" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="progGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <filter id="winShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="950" height="680" rx="14" fill="#0b1120"/>
+
+  <g filter="url(#winShadow)">
+    <rect x="25" y="25" width="900" height="630" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    
+    <rect x="25" y="25" width="900" height="40" rx="10" fill="url(#winTitle)"/>
+    <text x="50" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#38bdf8">Bitvise SSH Client / WinSCP [SFTP]</text>
+    <text x="270" y="50" font-family="monospace" font-size="12" fill="#94a3b8">sftp-user@192.168.1.100:22 (SSHv2 AES-256)</text>
+    
+    <g transform="translate(840, 36)">
+      <rect width="18" height="18" rx="3" fill="#334155"/>
+      <line x1="4" y1="9" x2="14" y2="9" stroke="#cbd5e1" stroke-width="2"/>
+      <rect x="24" width="18" height="18" rx="3" fill="#334155"/>
+      <rect x="28" y="4" width="10" height="10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
+      <rect x="48" width="18" height="18" rx="3" fill="#ef4444"/>
+      <line x1="53" y1="5" x2="61" y2="13" stroke="#ffffff" stroke-width="1.5"/>
+      <line x1="61" y1="5" x2="53" y2="13" stroke="#ffffff" stroke-width="1.5"/>
+    </g>
+
+    <g transform="translate(40, 75)">
+      <rect width="870" height="35" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="15" y="22" font-family="sans-serif" font-size="12" fill="#38bdf8" font-weight="600">Trạng thái kết nối:</text>
+      <circle cx="130" cy="18" r="5" fill="#10b981"/>
+      <text x="145" y="22" font-family="sans-serif" font-size="12" fill="#a7f3d0">Đã xác thực tài khoản sftp-user thành công (Cổng 22 / Subsystem sftp-server)</text>
+      <text x="730" y="22" font-family="monospace" font-size="11" fill="#fbbf24">Chế độ: Binary</text>
+    </g>
+
+    <!-- Left Pane: Local Files -->
+    <g transform="translate(40, 120)">
+      <rect width="425" height="420" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <rect width="425" height="32" rx="8" fill="#1e293b"/>
+      <text x="12" y="21" font-family="sans-serif" font-size="12" font-weight="700" fill="#38bdf8">MÁY TÍNH CỤC BỘ (WINDOWS)</text>
+      <text x="210" y="21" font-family="monospace" font-size="11" fill="#94a3b8">C:\Users\Admin\Downloads\</text>
+
+      <rect y="32" width="425" height="24" fill="#182234"/>
+      <text x="12" y="48" font-family="sans-serif" font-size="11" font-weight="600" fill="#64748b">Tên tệp</text>
+      <text x="240" y="48" font-family="sans-serif" font-size="11" font-weight="600" fill="#64748b">Kích thước</text>
+      <text x="330" y="48" font-family="sans-serif" font-size="11" font-weight="600" fill="#64748b">Thời gian</text>
+
+      <!-- Row 1 -->
+      <text x="12" y="78" font-family="sans-serif" font-size="12" fill="#cbd5e1">📁 .. (Thư mục cha)</text>
+      <text x="240" y="78" font-family="monospace" font-size="11" fill="#64748b">&lt;DIR&gt;</text>
+      <text x="330" y="78" font-family="monospace" font-size="11" fill="#64748b">--</text>
+
+      <!-- Row 2 -->
+      <text x="12" y="108" font-family="sans-serif" font-size="12" fill="#cbd5e1">📁 Documents</text>
+      <text x="240" y="108" font-family="monospace" font-size="11" fill="#64748b">&lt;DIR&gt;</text>
+      <text x="330" y="108" font-family="monospace" font-size="11" fill="#64748b">18:30:12</text>
+
+      <!-- Row 3: Highlight downloaded file -->
+      <rect x="5" y="122" width="415" height="30" rx="4" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+      <text x="12" y="142" font-family="sans-serif" font-size="12" font-weight="700" fill="#ecfdf5">📄 backup-check.log</text>
+      <text x="240" y="142" font-family="monospace" font-size="11" font-weight="700" fill="#34d399">184 B</text>
+      <text x="330" y="142" font-family="monospace" font-size="11" fill="#a7f3d0">18:55:00 [MỚI]</text>
+
+      <!-- Row 4 -->
+      <text x="12" y="180" font-family="sans-serif" font-size="12" fill="#cbd5e1">📄 report_notes.txt</text>
+      <text x="240" y="180" font-family="monospace" font-size="11" fill="#94a3b8">2.4 KB</text>
+      <text x="330" y="180" font-family="monospace" font-size="11" fill="#94a3b8">17:15:20</text>
+    </g>
+
+    <!-- Transfer Arrow Middle Indicator -->
+    <g transform="translate(445, 290)">
+      <circle cx="30" cy="30" r="22" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+      <path d="M 40 30 L 20 30 M 26 24 L 20 30 L 26 36" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <text x="30" y="65" font-family="sans-serif" font-size="10" font-weight="700" fill="#34d399" text-anchor="middle">KÉO TẢI VỀ</text>
+    </g>
+
+    <!-- Right Pane: Remote Files -->
+    <g transform="translate(485, 120)">
+      <rect width="425" height="420" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <rect width="425" height="32" rx="8" fill="#1e293b"/>
+      <text x="12" y="21" font-family="sans-serif" font-size="12" font-weight="700" fill="#a78bfa">MÁY CHỦ LINUX (REMOTE VPS)</text>
+      <text x="210" y="21" font-family="monospace" font-size="11" fill="#94a3b8">/var/log/app-backup/</text>
+
+      <rect y="32" width="425" height="24" fill="#182234"/>
+      <text x="12" y="48" font-family="sans-serif" font-size="11" font-weight="600" fill="#64748b">Tên tệp</text>
+      <text x="170" y="48" font-family="sans-serif" font-size="11" font-weight="600" fill="#64748b">Kích thước</text>
+      <text x="250" y="48" font-family="sans-serif" font-size="11" font-weight="600" fill="#64748b">Quyền</text>
+      <text x="330" y="48" font-family="sans-serif" font-size="11" font-weight="600" fill="#64748b">Chủ sở hữu</text>
+
+      <!-- Row 1 -->
+      <text x="12" y="78" font-family="sans-serif" font-size="12" fill="#cbd5e1">📁 .. (Thư mục cha)</text>
+      <text x="170" y="78" font-family="monospace" font-size="11" fill="#64748b">&lt;DIR&gt;</text>
+      <text x="250" y="78" font-family="monospace" font-size="11" fill="#64748b">drwxr-xr-x</text>
+      <text x="330" y="78" font-family="monospace" font-size="11" fill="#64748b">root:root</text>
+
+      <!-- Row 2: Selected source file -->
+      <rect x="5" y="92" width="415" height="30" rx="4" fill="#312e81" stroke="#6366f1" stroke-width="1"/>
+      <text x="12" y="112" font-family="sans-serif" font-size="12" font-weight="700" fill="#e0e7ff">📄 backup-check.log</text>
+      <text x="170" y="112" font-family="monospace" font-size="11" font-weight="700" fill="#a5b4fc">184 B</text>
+      <text x="250" y="112" font-family="monospace" font-size="11" fill="#a5b4fc">-rw-r-----</text>
+      <text x="330" y="112" font-family="monospace" font-size="11" fill="#a5b4fc">root:sftp-user</text>
+    </g>
+
+    <!-- Bottom Pane: Transfer Queue / Progress -->
+    <g transform="translate(40, 550)">
+      <rect width="870" height="90" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="15" y="24" font-family="sans-serif" font-size="12" font-weight="700" fill="#cbd5e1">Tiến trình truyền tải:</text>
+      <text x="150" y="24" font-family="monospace" font-size="11" fill="#38bdf8">backup-check.log &lt;-- /var/log/app-backup/</text>
+      <text x="730" y="24" font-family="monospace" font-size="11" font-weight="700" fill="#10b981">HOÀN TẤT (100%)</text>
+
+      <rect x="15" y="36" width="840" height="12" rx="6" fill="#1e293b"/>
+      <rect x="15" y="36" width="840" height="12" rx="6" fill="url(#progGrad)"/>
+
+      <text x="15" y="68" font-family="sans-serif" font-size="11" fill="#94a3b8">Đã tải: 184 Bytes / 184 Bytes • Tốc độ: 1.2 MB/s • Tệp đích: C:\Users\Admin\Downloads\backup-check.log</text>
+    </g>
+  </g>
+</svg>
